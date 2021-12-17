@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* text-align: center; */
+  overflow-x: hidden;
+}
+@media (max-width: 3000px) {
+    .scrollingTextBox{
+      width: auto;
+      max-width: 50%;
+      left:1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media (max-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+#fsPhotoBlock{
+  /* pointer-events: none; */
+  position:fixed;
+  top:0;
+  bottom:0;
+  width:100%;
+  z-index: 1000;
+  height: 100vh;
+  z-index: 8;
+  background-image: url("https://gagecarto.github.io/bonnerCoMap/kootenai-river.7b604315.jpg");
+  background-size: cover;
+  background-position: top;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  /* display: none; */
+}
+#gageCartoCredit{
+  position:fixed;
+  top:0px !important;
+  right: 5px !important;
+  /* bottom:0; */
+  z-index: 90;
+  opacity: 0;
+  color: rgb(233, 233, 233) !important;
+  /* bottom:1rem;
+  left:3rem; */
+}
+.link{
+  color: white !important;
+}
+
+#map {
+  pointer-events: none;
+  position:fixed;
+  top:0px !important;
+  bottom:0;
+  width:100%;
+  height: 100vh;
+  z-index: 5;
+  /* opacity: 0.25; */
+  /* text-align: center; */
+}
+#restartStoryButton{
+  position: absolute;
+  display: none;
+  z-index: 100;
+  top:1.5rem;
+  left: 1.5rem;
+}
+.slideNum{
+  position: absolute;
+  right:1rem;
+  font-size: 0.5rem;
+  color:white;
+  display: none;
+}
+#titleText{
+  /* position: absolute; */
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-family: 'Merriweather', serif;
+  font-weight: bolder;
+  z-index: 10;
+  padding-left: 5rem;
+  padding-top: 5rem;
+}
+#subtitleText{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.45);
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 70%;
+  text-align: left;
+  margin-left: 6rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  z-index: 10;
+}
+#scrollDownText{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+  bottom:1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.scrollingImage{
+  /* position: relative;
+  width:100%;
+  height: auto; */
+  /* max-height: 50vh; */
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgb(56, 56, 56);
+}
+.imageCredit{
+  position: relative;
+  z-index: 100;
+  bottom:7px;
+  left:5px;
+  color:rgba(32, 32, 32, 0.85);
+  font-size: 1rem;
+}
+.scrollingTextBox{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  user-select: none; /* Standard */
+  position:relative;
+  z-index: 500;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
+  height: auto;
+  text-align: left;
+  max-width: 40%;
+  border-radius: 10px;
+}
+.scrollingBody{
+  color: rgb(36, 36, 36);
+}
+
+@media (max-width: 600px) {
+  .scrollingTextBox{
+  width: 95% !important;
+  max-width: 95% !important;
+  margin-left: 0% !important;
+  }
+  .scrollingTextBoxIntro{
+  width: 95% !important;
+  max-width: 95% !important;
+  margin-left: 0% !important;
+  /* display: none; */
+  }
+}
+.btn{
+  background-color: #421d41 !important;
+}
+.italic{
+  font-style: italic !important;
+}
+.bold{
+  font-weight: bold !important;
+}
+.introText{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75rem !important;
+}
+
+.centerScrollBox{
+  margin: 0px auto;
+  margin-top: 150vh;
+  text-align: center;
+}
+.leftScrollBox{
+  margin: 0px auto;
+  margin-top: 150vh;
+  margin-left:1rem;
+  text-align: left;
+}
+.rightScrollBox{
+  margin: 0px auto;
+  margin-top: 150vh;
+  margin-right:3rem;
+}
+.firstTextBox{
+  margin-top: 25vh;
+}
+#mapLegend{
+  user-select: none; /* Standard */
+  display: none;
+  background-color: white;
+  border-radius: 5px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 20;
+  bottom:2rem;
+  width: auto;
+  max-width: 95%;
+  right:1rem;
+  height:auto;
+  z-index: 10;
+  padding: 1rem 1rem 0rem 1rem;
+}
+.scrollingLegendItem{
+  height: 3rem;
+}
+#introLogo{
+  margin-bottom: 4rem;
+}
+#introCred{
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  bottom:1px;
+  left:0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color:white !important;
+  padding:0.5rem;
+}
+#gcCred{
+  position: absolute;
+  z-index: 1000;
+  color: white;
+  bottom:5px;
+  right:5px;
+  text-decoration: none;
+  color:white !important;
+}
+#gcCred a{
+  color:inherit !important;
+}
+.legendItemBox{
+  display: none;
+  height: 3rem !important;
+}
+
+.legendItemLabel{
+  pointer-events: none;
+  position: relative;
+  font-size: 1rem;
+  margin-left: 2.5rem;
+  height: 2rem;
+  bottom: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  /* text-shadow: 0 0 0.5em #000000, 0 0 0.5em #000000, 0 0 0.5em #000000; */
+}
+.mapLegendBox{
+  width: 2rem;
+  height: 1.8rem;
+  opacity: 0.75;
+  margin-left: 0.5rem;
+}
+.mapLegendLine{
+  border:none;
+  border-bottom:5px dotted #f00;
+  /* color:#fff; */
+  background-color:rgba(255, 255, 255, 0);
+  width: 2rem;
+  margin-left: 1rem;
+  height: 1.25rem;
+}
+#endorseLink{
+  font-size: 1.5rem;
+  width:100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.lastTextBox{
+  margin-bottom: 60vh !important;
+}
